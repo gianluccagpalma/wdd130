@@ -1,4 +1,13 @@
-body {}
+nav {
+    background-color: #023901c7;
+    padding: 1rem;
+}
+
+nav a {
+    color: #13e10f9a;
+    padding: 2px;
+    display: block;
+}
 
 main {
     max-width: 840px;
@@ -10,6 +19,8 @@ main img {
     width: 150px;
     height: auto;
     border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1px;
+    box-shadow: #000;
 }
 
 aside {
@@ -29,6 +40,10 @@ aside img {
 
 p {
     padding: 0;
+}
+
+h1 {
+    color: #064202;
 }
 
 footer {
