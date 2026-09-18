@@ -41,8 +41,8 @@ header {
 
 h1,
 h2 {
-    font-family: var(-- heading-font);
-    color: var(-- primary-color);
+    font-family: var(--heading-font);
+    color: var(--primary-color);
 }
 
 nav,
@@ -80,7 +80,7 @@ h1 {
     color: #fff;
 }
 
-article {
+.hero article {
     position: absolute;
     top: 310px;
     left: 20px;
