@@ -64,6 +64,10 @@ nav a {
     padding: 10px;
 }
 
+nav a:hover {
+    color: var(--accent2-color);
+}
+
 h1,
 h2 {
     font-family: var(--heading-font);
