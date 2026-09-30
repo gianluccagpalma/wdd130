@@ -1,0 +1,100 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f6f9;
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Main Form Container */
+    form {
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        max-width: 600px;
+        width: 100%;
+    }
+
+    /* Question Groups (Fieldsets) */
+    fieldset {
+        border: 1px solid #e1e4e8;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 20px;
+        background-color: #fafbfc;
+    }
+
+    fieldset:hover {
+        border-color: #4a90e2;
+    }
+
+    /* Question Titles */
+    legend {
+        font-weight: 600;
+        font-size: 0.95rem;
+        color: #0056b3;
+        padding: 0 8px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    /* Question Text / Labels */
+    label {
+        display: block;
+        font-size: 1rem;
+        font-weight: 500;
+        color: #2c3e50;
+        margin-bottom: 12px;
+    }
+
+    /* Styling Code Snippets inside Question Text */
+    code {
+        background-color: #eef2f5;
+        color: #41d633;
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-size: 0.9em;
+    }
+
+    /* Common Form Input Styling (Text, Select, Textarea, Number) */
+    input[type="text"],
+    input[type="number"],
+    select,
+    textarea {
+        width: 100%;
+        padding: 10px 14px;
+        font-size: 0.95rem;
+        font-family: inherit;
+        color: #333;
+        background-color: #ffffff;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+    }
+
+    /* Submit Button */
+    button[type="submit"] {
+        width: 100%;
+        background-color: #0056b3;
+        color: #ffffff;
+        border: none;
+        padding: 12px 20px;
+        font-size: 1rem;
+        font-weight: 600;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    button[type="submit"]:hover {
+        background-color: #004085;
+    }
+
+    button[type="submit"]:active {
+        transform: scale(0.99);
+    }
