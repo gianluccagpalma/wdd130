@@ -22,6 +22,7 @@
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
+    background-color: #fff;
 
 }
 
@@ -66,7 +67,8 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--accent2-color);
+    color: #fff;
+    text-decoration: underline;
 }
 
 h1,
@@ -112,7 +114,7 @@ article {
     object-fit: cover;
 }
 
-.hero article {
+.hero .mission {
     grid-area: 1 / 1;
     align-self: end;
     z-index: 1;
@@ -123,7 +125,7 @@ article {
     color: #000;
 }
 
-.hero article img {
+.hero .mission img {
     width: 220px;
     height: auto;
     float: right;
@@ -213,12 +215,12 @@ footer {
     font-size: 28px;
 }
 
-.hero2 article {
+.hero2 .contact-details {
     margin: 0;
     padding: 0;
 }
 
-.hero2 article p {
+.hero2 .contact-details p {
     margin: 2px;
     padding: 0;
     font-weight: bold;
@@ -428,17 +430,17 @@ img {
         font-size: clamp(1.5rem, 5vw, 2rem);
     }
 
-    .hero article {
+    .hero .mission {
         margin: 0;
         padding: 16px;
     }
 
-    .hero article img {
+    .hero .mission img {
         float: none;
         margin: 0 auto 16px;
     }
 
-    .hero article p,
+    .hero .mission p,
     .grid_history p {
         margin: 0;
         padding: 0;
@@ -656,11 +658,6 @@ img {
     text-align: center;
 }
 
-.trips-intro a {
-    color: var(--primary-color);
-    font-weight: bold;
-}
-
 .trips-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -736,4 +733,28 @@ img {
     .trips-comparison td {
         padding: 6px;
     }
+}
+
+
+/* Keep form text and placeholders readable. */
+input[type="text"],
+input[type="email"],
+textarea {
+    color: #222;
+    background-color: #fff;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #595959;
+    opacity: 1;
+}
+
+.grid_form button {
+    color: #222;
+    background-color: #efefef;
+}
+
+.grid_form button:hover {
+    background-color: var(--accent2-color);
 }
